@@ -1,0 +1,24 @@
+
+<!--URL Template -->
+<h1> {{title}} </h1>
+<h3> {{showInfo}} </h3>
+
+<h3>Name : {{person.name}}</h3>
+
+<h3>Age : {{person.age}}</h3>
+
+<!--Both to bind data from TS -->
+<!--Interpolation Binding -->
+<img src="{{imageUrl}}">
+
+<!-- Property Binding -->
+<img [src]="imageUrl">
+
+<h3> {{fruits | json}} </h3>
+
+<!-- Local Template Reference -->
+<input [value]="inputText" type="text" #myInput />
+
+<button (click)="onClick(myInput.value)" >Click Me</button>
+
+
